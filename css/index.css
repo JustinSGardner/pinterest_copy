@@ -11,3 +11,42 @@ body {
     margin: 0;
     padding: 0;
 }
+.icon-wrapper {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 3rem;
+    padding: 0.25rem;
+    width: 3rem;
+}
+.icon-wrapper svg {
+    height: 100%;
+    width: 100%;
+}
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.image-list li {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    flex: 1 0 274px;
+    max-width: 320px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.image-list li img {
+    width: 100%;
+    heights: 100%;
+}
+@media screen and (min-width: 321px) {
+    .image-list li:nth-child(6) {
+        flex-basis: 65%;
+        max-width: 100%;
+    }
+}
